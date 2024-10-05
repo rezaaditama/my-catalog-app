@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Button = () => {
+const Button = ({ className, children }) => {
   return (
-    <button className='font-bold text-white bg-black px-3 py-2 rounded'>
-      Submit
+    <button
+      className={`${className} font-bold text-white bg-black px-3 py-2 rounded`}
+    >
+      ${children}
     </button>
   );
 };
